@@ -1,0 +1,124 @@
+
+<!-- Main Website consist of Logo, Headline, a navigational menu witha background
+    picture, in the footer we will place the page number and links too our social
+    media, this webstyle or webpage will be our web diagram and page layout and will
+    follow and be consistent throughout all our webpages. 
+-->
+<!-- Document type is HTML5 -->
+<!DOCTYPE html>
+<html lang="en"> <!-- The language we are using is Englsih -->
+<head>
+    <meta charset="UTF-8"> <!-- Allows us too use HTML characters and symbols -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Allows us too select what browser will the code be representing on -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Page dimension goes across in scale of 1 -->
+    <link rel="stylesheet" href="stylesheet.css"> <!-- Link relation too our CSS style sheet -->
+    <link rel="stylesheet" href="menu.css"> <!-- Link relation too our hamburger menu -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Link relation to a website that contains our vector icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"> <!-- both links are too custom font types  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Pedal Co.</title> <!-- Our title of the Website -->
+</head>
+<body>
+
+    <!-- 
+        Our header class has logo and our hamburger menu, a type of a drop box navigation 
+        menu, we made it a checkbox input so the function is when selected or ticked it
+        opnes the menu and when unchecked it closes. We apply hyperlinks and texts too
+        the lists in the menu. 
+    -->
+
+    <header>
+        <nav>
+            <!-- Every website I visited allows the user too return too index page by clicking on the logo on the top left of the website -->
+            <h2><a href="index.html">Pedal Co.</a></h2>
+            <!-- Live clock div element
+                 Used vanilla JavaScript too apply live clock hours
+                 span includes numbers too show its using Intergers
+                 AM is a string that can convert too PM given the conditions are met
+             -->
+           
+
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger"><div></div></div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./about-us/about-us.html">About us</a></li>
+                                <li><a href=".//our-bikes/our-bikes.html">Our Bikes</a></li>
+                                <li><a href="./service/services&repairs.html">Services & Repairs</a></li>
+                                <li><a href="./login&SingUp/loginPage.html">Sign Up</a></li>
+                                <li><a href="./Contact/contact.html">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+        <section>
+            <div class="backgroundimg">
+                <div id="clock">
+                <h5><u>Time</u></h5>
+                <div id="time" hidden>
+                    <div><span id="hours">00</span></div>
+                    <div><span id="minutes">00</span></div>
+                    <div><span id="seconds">00</span></div>
+                    <div><span id="phase">AM</span></div>
+                </div>  
+                </div>
+                <img class="bicycleBackground" src="background/Background1.jpg" alt="bicycle">
+                <h1 class="headline">PEDAL</h1>
+                <script class="TimeOfDay" src="dayscript.js"></script>
+                <div class="user-name">By Manjil Ghale</div>
+            </div>
+        </section>
+    </header>
+    <footer>
+        <div class="page-numbers">
+            <p class="page-number">01/</p>
+            <p class="number-of-pages">07</p>
+        </div>
+        <div class="media">
+            <!-- Creating an unorderlist so I can display icons using the link a website that links too icon set and toolkit. -->
+            <uL>
+                <li>
+                    <a href="https://www.instagram.com/manjil_ghale/">
+                        <i class="fa fa-instagram fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/manjil-ghale-415b30195/">
+                        <i class="fa fa-linkedin fa-2x">  
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/manjellion89768">
+                        <i class="fa fa-twitter-square fa-2x">
+                        </i>
+                    </a>
+                </li>
+            </uL>
+        </div>
+    </footer>
+    
+    <!-- slider class is the animation you see in the beginning drawings our page from the left -->
+    <div class="slider"></div>
+    <!-- We put it outside of the body as a seperate class as it needs too cover the page, also resets the class to start from the left when on 0 attribute  -->
+
+    <!-- JavaScript libary, TweenMax and TimeLine allows us too use commands
+        scripts that would allow the slider animations too prompt
+    -->
+    <script src="/RealTimeClock.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous"></script>
+    <script src="./animation.js" async></script>
+    <!-- 
+        The async tool is a tool that allows the JS file too be downloaded on the webpage when the HTML is parsing (Analysing)
+            It greatly reduces the time for the website too load HTML elements like images
+    -->
+</body>
+</html>

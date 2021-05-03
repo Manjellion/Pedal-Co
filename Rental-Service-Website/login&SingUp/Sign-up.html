@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign-up.css">
+    <link rel="stylesheet" href="../menu.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Pedal Co.</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2><a href="../index.html">Pedal Co.</a></h2>
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger"><div></div></div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="../about-us/about-us.html">About us</a></li>
+                                <li><a href="../our-bikes/our-bikes.html">Our Bikes</a></li>
+                                <li><a href="../service/services&repairs.html">Services & Repairs</a></li>
+                                <li><a href="../login&SingUp/loginPage.html">Sign Up</a></li>
+                                <li><a href="../Contact/contact.html">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- 
+            Login section
+        -->
+        <section>
+            <div class="bg-img">
+                <div class="content">
+                    <!-- Title -->
+                    <header>Sign Up Form</header>
+                    <form action="#">
+                        <!-- Email input -->
+                        <div class="field">
+                            <!-- This is a vector icon pre connected too a link in head section -->
+                            <span class="fa fa-user"></span>
+                            <input type="text" required placeholder="Email address">
+                        </div>
+                        <!-- Password input -->
+                        <div class="field space">
+                            <span class="fa fa-lock"></span>
+                            <input type="password" class="password" required placeholder="Password">
+                            <span class="show">SHOW</span>
+                        </div>
+                        <!-- Forgot Password hyperlink -->
+                        <div class="pass">
+                        </div>
+                        <!-- Submit Login input -->
+                        <div class="field">
+                            <input type="submit" value="SIGN UP">
+                        </div>
+                        <!-- Login extentsion title  -->
+                        <div class="login">Or Sign Up with</div>
+                        <div class="link">
+                            <!-- Login Extenstions, again connected too a webtool that allows u too use vector icons -->
+                            <div class="facebook">
+                                <i class="fa fa-facebook fa-1x"><span><a href="https://en-gb.facebook.com/login/">Facebook</a></span></i>
+                            </div>
+                            <div class="instagram">
+                                <i class="fa fa-google fa-1x"><span><a href="https://accounts.google.com/ServiceLogin/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Google</a></span></i>
+                            </div>
+                        </div>
+                        <!-- Alternative Links -->
+                    </form>
+                </div>
+            </div>
+            <div class="backgroundimg">
+                <img class="bicycleBackground" src="../background/Background7.jpg" alt="bicycle">
+                <h1 class="headline">PEDAL</h1>
+            </div>
+        </section>
+    </header>
+    <footer>
+        <div class="page-numbers">
+            <p class="page-number">06/</p>
+            <p class="number-of-pages">07</p>
+        </div>
+        <div class="media">
+            <!-- Creating an unorderlist so I can display icons using the link a website that links too icon set and toolkit. -->
+            <uL>
+                <li>
+                    <a href="https://www.instagram.com/manjil_ghale/">
+                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/manjil-ghale-415b30195/">
+                        <i class="fa fa-linkedin fa-2x" aria-hidden="true">  
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/manjellion89768">
+                        <i class="fa fa-twitter-square fa-2x" aria-hidden="true">
+                        </i>
+                    </a>
+                </li>
+            </uL>
+        </div>
+    </footer>
+
+    <div class="slider"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous"></script>
+    <script src="../animation.js"></script>
+    <script src="LoginForm.js"></script>
+</body>
+</html>
